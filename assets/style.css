@@ -1,0 +1,130 @@
+body{
+    background: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    background: #ffffff;
+    width: 500px;
+    height: 390px;
+    margin: auto;
+    display: flex;
+    border-radius: 8px;
+}
+
+.img{
+    width: 250px;
+    height: 100%;
+    background: url(img/image-product-desktop.jpg);
+    background-size: cover;
+    border-radius: 8px 0 0 8px;
+}
+
+.content{
+    width: 250px;
+    height: 100%;    
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem;
+}
+
+.price{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price p{
+    text-decoration: line-through;
+}
+
+h1, h3{
+    font-family: 'Fraunces', serif;
+    font-size: 27px;
+}
+
+h1{
+    margin: 15px 0 20px 0;
+    line-height: 27px;
+}
+
+p{
+    color: hsl(228, 12%, 48%);
+    font-size: 11px;
+    line-height: 20px;
+    margin: 0;
+}
+
+h3{
+    color: hsl(158, 36%, 37%);
+    margin-right: 20px;
+}
+
+button{
+    background: hsl(158, 36%, 37%);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    padding: 0.8rem;
+    display: flex;
+    text-align: center;
+}
+
+svg{
+    margin-left: 25%;
+}
+
+.attribution{
+    display: none;
+}
+
+@media screen and (max-width: 550px){
+
+    .main{
+        flex-direction: column;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+    .container{
+        width: 330px;
+        height: 570px;
+        margin: auto;
+    }
+
+    .img{
+        border-radius: 8px 8px 0 0;
+        width: 330px;
+        height: 40%;
+        background: url(img/image-product-mobile.jpg);
+        background-size: cover;
+    }
+
+    .content{
+        width: 330px;
+        height: 60%;
+    }
+
+    svg{
+        margin-left: 30%;
+    }
+}
+
+
+
